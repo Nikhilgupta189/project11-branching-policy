@@ -12,6 +12,8 @@ resource "terraform_data" "infrastructure" {
   input = {
     project     = "project11"
     environment = var.environment
+    managed_by  = "terraform"
+    owner       = "devops-team"
   }
 }
 
